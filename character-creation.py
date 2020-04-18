@@ -45,6 +45,8 @@ print("Excellent. Now we will roll your attribute scores. These will affect how 
 #TODO Generate Initial Skill Scores. As a bonus, incorporate proficency bonus
 #
 
+#VARIABLES USED: 
+
 #TODO Make the user selec character details like faith, physical descriptors, height/weight/etc. 
 
 #TODO Make the user select a background FROM Entertainer, Hermit, Urchin. 
