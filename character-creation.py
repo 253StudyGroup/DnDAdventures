@@ -31,6 +31,8 @@ print("This are your stats based on your experience in the world.")
 
 #TODO Generate Initial Skill Scores. As a bonus, incorporate proficency bonus
 
+#VARIABLES USED: 
+
 #TODO Make the user selec character details like faith, physical descriptors, height/weight/etc. 
 
 #TODO Make the user select a background FROM Entertainer, Hermit, Urchin. 
