@@ -34,6 +34,8 @@ def choose_char_race():
 	print("Pick the race which you would prefer to play in this realm.")
 	RaceOfChar = input("Choose your Race:")
 	return RaceOfChar
+#####END OF choose_char_race METHOD###
+
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
