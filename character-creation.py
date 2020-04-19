@@ -2,6 +2,8 @@ import pygame
 
 ###### VARIABLE CREATION CENTER ##### -CP 04/18/2020 @ 4:30pm on a Saturday
 HitPoints = 0
+InitScore = 0
+CharSpeed = 0
 RaceOfChar = 'NONE'
 ClassOfChar = 'NONE'
 StrengthOfChar = 0
@@ -12,6 +14,8 @@ DexterityOfChar = 0
 ConstitutionOfChar = 0
 CharSkills = {:}
 CharSkillsStat = []
+SavingThrowCheckArray = []
+ProficiencyArray = []
 ProficiencyBonus = 0
 ###########################################################################
 	print("Greetings Soul! You've spent a long time in the nether.")
@@ -23,7 +27,7 @@ def choose_char_class():
 	print(" 1. Fighter (Experienced in Hand to Hand Combat)")
 	print(" 2. Rogue (Experienced in Stealth and Subtlety)")
 	print(" 3. Wizard (Experienced in Knowledge and Spells)")
-	ClassOfChar = input("Create your Class:")
+	ClassOfChar = input("Create your Class: ")
 
 	return ClassOfChar
 ####END OF choose_char_class METHOD####
@@ -32,13 +36,52 @@ def choose_char_race():
 	print("What Race would you like to be?")
 	print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
 	print("Pick the race which you would prefer to play in this realm.")
-	RaceOfChar = input("Choose your Race:")
+	RaceOfChar = input("Choose your Race: ")
 	return RaceOfChar
 #####END OF choose_char_race METHOD###
 
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
+#### BEGIN RACE IMPACT CHANGERATOR ####
+def dwarf():
+	print ("You have chosen to be a dwarf!")
+	print ("Your constitution score increases by 2!")
+	ConstitutionOfChar = ConstitutionOfChar+2
+	print ("Your speed is set to 25 feet per turn!")
+	CharSpeed = 25
+	print ("You have advantage on saving throws against poison!")
+	SavingThrowCheckArray.append("poison")
+	print ("As a dwarf, you have proficiency with the following weapons:\nBattleaxe\nHandaxe\nLight Hammer\nWarhammer")
+	ProfiencyArray.append("Battlexe","Handaxe","Light Hammer","Warhammer")
+	print ("You also get the opportunity now to choose a tool you would like to be proficient with. \nDo you choose Smith's Tools, Brwer's Supplies, or Mason's Tools?")
+	ToolProficiency = input("(Smith, Brewer, Mason?): ")
+		def dwarfToolProficiencyCheck(ToolProficiency):
+		if ToolProficiency == "Smith":
+			print("You have chosen the way of the Blacksmith!")
+			ProfiencyArray.append("Smith's Tools")
+		elif ToolProficiency == "Brewer":
+			print("You have chosen the way of the Brewer! \nMmm... Beer.")
+			ProficiencyArray.append("Brewer's Tools")
+		elif ToolProficiency == "Mason":
+			print("You have chosen the way of the Stonemason!")
+			ProfiencyArray.append("Mason's Tools")
+		else:
+			print("Hmm... I don't recognize what that choice means. Please be sure to speak clearly, and enunciate.")
+			ToolProficiency = input("(Smith, Brewer, Mason?): ")
+			ToolProficiency = dwarfToolProficiencyCheck(ToolProficiency)
+	print("")
+
+
+def elf():
+	print ("You have chosen to be a elf!")
+
+def human():
+	print ("You have chosen to be a human!")
+########################################
+
+#### BEGIN CLASS IMPACT CHANGERATOR ####
+
 
 
 print("Excellent. Now we will roll your attribute scores. These will affect how well your character operates in this world.")
