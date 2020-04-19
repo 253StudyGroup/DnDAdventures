@@ -10,8 +10,8 @@ WisdomOfChar = 0
 IntellectOfChar = 0
 DexterityOfChar = 0
 ConstitutionOfChar = 0
+AthleticsCheck, AcrobaticsCheck
 ###########################################################################
-
 
 print("Welcome to the character generator!")
 print("What kind of Character would you like to make?")
@@ -30,12 +30,9 @@ print("Excellent. Now we will roll your attribute scores. These will affect how 
 
 #TODO Import the stats generation script. Also, depending on the CLASS chosen, give the user a choice between the "preferred" option
 # or to go their own path. 
-#
-
 
 #TODO Designate the points from generation into attribute scores along with the racial bonuses. 
 #VARIABLES MODIFIED HERE: Str, Chr, Wis, Int, Dex, Con
-
 
 #TODO Generate Hit Points based off the designation of attribute scores 
 #VARIABLES MODIFIED HERE: Hit Points
@@ -43,7 +40,15 @@ print("Excellent. Now we will roll your attribute scores. These will affect how 
 #TODO Generate Initial Skill Scores. As a bonus, incorporate proficency bonus
 #
 
-#VARIABLES USED: 
+#VARIABLES USED: STR, DEX, CON, INT, WIS, CHA
+
+# STR Skills: Athletics
+# DEX Skills: Acrobatics
+# CON Skills: 
+# INT Skills:
+# WIS Skills:
+# CHA Skills:
+
 
 #TODO Make the user selec character details like faith, physical descriptors, height/weight/etc. 
 
