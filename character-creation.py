@@ -10,7 +10,9 @@ WisdomOfChar = 0
 IntellectOfChar = 0
 DexterityOfChar = 0
 ConstitutionOfChar = 0
-AthleticsCheck, AcrobaticsCheck
+CharSkills = {:}
+CharSkillsStat = []
+ProficiencyBonus = 0
 ###########################################################################
 	print("Greetings Soul! You've spent a long time in the nether.")
 	print("It has become your time to enter a world of mystery and adventure.")
@@ -51,14 +53,18 @@ print("Excellent. Now we will roll your attribute scores. These will affect how 
 #TODO Generate Initial Skill Scores. As a bonus, incorporate proficency bonus
 #
 
-#VARIABLES USED: STR, DEX, CON, INT, WIS, CHA
+#VARIABLES USED: STR, DEX, CON, INT, WIS, CHA, ProficencyBonus
 
 # STR Skills: Athletics
-# DEX Skills: Acrobatics
-# CON Skills: 
-# INT Skills:
-# WIS Skills:
-# CHA Skills:
+# DEX Skills: Acrobatics, Sleight of Hand, Stealth
+# INT Skills: Arcana, History, Investigation, Nature, Religion
+# WIS Skills: Animal Handling, Insight, Medicine, Perception, Survival
+# CHA Skills: Deception, Intimdation, Performance, Persuasion
+
+#Flow should read in stats, and then assign the sum of stat and proficiency bonus to the skill.
+
+    def str_skill_gen(stat):
+        
 
 
 #TODO Make the user selec character details like faith, physical descriptors, height/weight/etc. 
