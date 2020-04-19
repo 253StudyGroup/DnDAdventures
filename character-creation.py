@@ -18,10 +18,12 @@ print("What kind of Character would you like to make?")
 print("Please list your preference, with the number attached.")
 print(" 1. Fighter")
 print(" 2. Rogue")
-print(" 1. Wizard")
+print(" 3. Wizard")
+ClassOfChar = input("Create your Class:")
 
 print("What Race would you like to be?")
-print("You could be flexible like a human, agile like an elf, or hearty as a dwarf. Pick the race which you would prefer to play in this realm.")
+print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
+print("Pick the race which you would prefer to play in this realm.")
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
