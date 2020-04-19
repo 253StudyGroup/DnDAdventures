@@ -12,21 +12,30 @@ DexterityOfChar = 0
 ConstitutionOfChar = 0
 AthleticsCheck, AcrobaticsCheck
 ###########################################################################
+	print("Greetings Soul! You've spent a long time in the nether.")
+	print("It has become your time to enter a world of mystery and adventure.")
 
-print("Welcome to the character generator!")
-print("What kind of Character would you like to make?")
-print("Please list your preference, with the number attached.")
-print(" 1. Fighter")
-print(" 2. Rogue")
-print(" 3. Wizard")
-ClassOfChar = input("Create your Class:")
+def choose_char_class():
+	print("The role that your character will play in the world will be important!")
+	print("Will you choose the Figher, Rogue, or Wizard?")
+	print(" 1. Fighter (Experienced in Hand to Hand Combat)")
+	print(" 2. Rogue (Experienced in Stealth and Subtlety)")
+	print(" 3. Wizard (Experienced in Knowledge and Spells)")
+	ClassOfChar = input("Create your Class:")
 
-print("What Race would you like to be?")
-print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
-print("Pick the race which you would prefer to play in this realm.")
+	return ClassOfChar
+####END OF choose_char_class METHOD####
+
+def choose_char_race():
+	print("What Race would you like to be?")
+	print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
+	print("Pick the race which you would prefer to play in this realm.")
+	RaceOfChar = input("Choose your Race:")
+	return RaceOfChar
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
+
 
 print("Excellent. Now we will roll your attribute scores. These will affect how well your character operates in this world.")
 
