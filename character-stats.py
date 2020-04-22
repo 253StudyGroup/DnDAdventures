@@ -1,3 +1,16 @@
+########################
+#File Name:character-stats.py
+#Date Started: 4/19/2020
+#Date Finished: 
+#Author: Mark Bell
+#***********************
+#General Purpose: To define the library for characters stats, how they're 
+#generated, assigned, and edited.
+#Imported to:character-creation.py
+#Misc. Notes
+########################
+
+
 #TODO Import the stats generation script. 
 
 #TODO Decide how the stats are slotted into attribute scores. 
@@ -29,9 +42,6 @@ def racial_add(stat_list, race_input):
 
 
 #Input Variables
-
-
-Stats Values from generator script
 
 #TODO Generate Hit Points based off the designation of attribute scores 
 

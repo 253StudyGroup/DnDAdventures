@@ -1,3 +1,19 @@
+########################
+#File Name:character-creation.py
+#Date Started: 4/11/2020
+#Date Finished: 
+#Author(s): Mark Bell, Connor Porter
+#***********************
+#General Purpose:To introduce and create a character according to the rule
+#-set of DnD 5th edition. 
+#Imported to:None
+#Misc. Notes: 
+########################
+
+
+
+
+
 import pygame
 
 ###### VARIABLE CREATION CENTER ##### -CP 04/18/2020 @ 4:30pm on a Saturday
