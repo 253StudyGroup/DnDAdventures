@@ -45,7 +45,11 @@ def choose_char_class():
 	print(" 2. Rogue (Experienced in Stealth and Subtlety)")
 	print(" 3. Wizard (Experienced in Knowledge and Spells)")
 	ClassOfChar = input("Create your Class: ")
-
+	while ClassOfChar != "fighter" or "rogue" or "wizzard" or "Fighter" or "Rogue" or "Wizard":
+		print("Sorry soul... That class is not available for you at this time.")
+		print("Please choose from the following options: Fighter, Rogue, Wizard.")
+		ClassOfChar = input("Choose your Class: ")
+		
 	return ClassOfChar
 ####END OF choose_char_class METHOD####
 
@@ -54,12 +58,26 @@ def choose_char_race():
 	print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
 	print("Pick the race which you would prefer to play in this realm.")
 	RaceOfChar = input("Choose your Race: ")
+	while RaceOfChar != "dwarf" or "elf" or "human" or "Dwarf" or "Elf" or "Human":
+	print("I apologize, but that race is not available for this adventure.")
+	print("Please choose from the following options: Dwarf, Elf, or Human.")
+	RaceOfChar = input("Choose your Race: ")
+
 	return RaceOfChar
+
 #####END OF choose_char_race METHOD###
 
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
+
+
+
+
+
+
+
+
 #### BEGIN RACE IMPACT CHANGERATOR ####
 def dwarf():
 	print ("You have chosen to be a dwarf!")
