@@ -28,6 +28,7 @@ WisdomOfChar = 0
 IntellectOfChar = 0
 DexterityOfChar = 0
 ConstitutionOfChar = 0
+StatPair = 
 CharSkills = {:}
 CharSkillsStat = []
 SavingThrowCheckArray = []
@@ -123,8 +124,38 @@ print("Excellent. Now we will roll your attribute scores. These will affect how 
 # CHA Skills: Deception, Intimdation, Performance, Persuasion
 
 #Flow should read in stats, and then assign the sum of stat and proficiency bonus to the skill.
+skill_names = ['Athletics', 'Acrobatics', 'Sleight of Hand', 'Stealth', \
+                'Arcana', 'History', 'Investigation', 'Nature', 'Religion', \
+                'Animal Handling', 'Insight', 'Medicine', 'Perception', 'Survival' \
+                'Deception', 'Intimdation', 'Performance', 'Persuasion' ]
 
-    def str_skill_gen(stat):
+def skill_list_gen(skill):
+	skill_list = []
+
+	
+	#This will assemble the pairing
+	for i in range(0,len(skill)):
+		skill_pair = {skill[i]:0}
+		skill_list.append(skill_pair)
+	print(skill_list)
+	
+skill_list_gen(skill_keys)
+
+   # def char_skill_gen(stat):
+            #skill_list = []
+            
+            
+        #if stat == 'STR':
+                
+        #elif stat == 'DEX':
+       # elif stat == 'INT':
+        #elif stat == 'WIS':
+       # elif stat == 'CHA':
+        #else:
+                #continue
+        
+                
+                    
         
 
 
