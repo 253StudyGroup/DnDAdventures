@@ -16,6 +16,7 @@
 
 import pygame
 
+
 ###### VARIABLE CREATION CENTER ##### -CP 04/18/2020 @ 4:30pm on a Saturday
 HitPoints = 0
 RaceOfChar = 'NONE'
@@ -30,8 +31,8 @@ CharSkills = {:}
 CharSkillsStat = []
 ProficiencyBonus = 0
 ###########################################################################
-	print("Greetings Soul! You've spent a long time in the nether.")
-	print("It has become your time to enter a world of mystery and adventure.")
+print("Greetings Soul! You've spent a long time in the nether.")
+print("It has become your time to enter a world of mystery and adventure.")
 
 def choose_char_class():
 	print("The role that your character will play in the world will be important!")
@@ -49,7 +50,9 @@ def choose_char_race():
 	print("You could be flexible like a human, agile like an elf, or hearty as a dwarf!")
 	print("Pick the race which you would prefer to play in this realm.")
 	RaceOfChar = input("Choose your Race:")
+	HitPoints = 3
 	return RaceOfChar
+	
 
 #TODO Take the user choice and code in what would result from this choice. Include racial bonuses, features, and any other
 # impact to their character
