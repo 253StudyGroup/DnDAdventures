@@ -23,16 +23,11 @@ dir = {K_LEFT: (-5, 0), K_RIGHT: (5, 0), K_UP: (0, -5), K_DOWN: (0, 5)}
 
 width, height = size
 
+############FONT RENDERER###
 
-#class Text(Node):
-"""Create a text object which knows how to draw itself."""
-#    fontname = None
-#    fontsize = 36
-#    fontcolor = Color('BLACK')
-#    background = None
-#    italic = False
-#    bold = False
-#    underline = False
+pygame.font.init()
+
+
 
 
 
@@ -43,11 +38,15 @@ width, height = size
 pygame.init() #Begins the program.
 
 ##SETUP STUFF
-
+t0 = time.time()
+nameFont = pygame.font.SysFont('arial', 72, False, False)
+print('time needed for Font creation :', time.time()-t0)
 
 screen = pygame.display.set_mode(size) #Brings up a Display
 #variableName = Rect(X, Y, W, H)
 nameBox = Rect(0, 0, 400, 15)
+
+
 healthBar = Rect(0, 15, 400, 15)
 horizontalBottomBar = Rect(0, 700, 1200, 3)
 horizontalTopBar = Rect(0, 30, 1200, 3)
@@ -55,6 +54,10 @@ verticalBottomBarLeft = Rect(400, 700, 3, 200)
 verticalBottomBarRight = Rect(800, 700, 3, 200)
 verticalTopBarLeft = Rect(400,0,3,30)
 verticalTopBarRight = Rect(800,0,3,30)
+
+nameFontInBox = nameFont.render('characterName',True,WHITE)
+screen.blit(nameFontInBox, (450,450))
+pygame.display.update()
 """print(f'x={nameBox.x}, y={nameBox.y}, width={nameBox.w}, height={nameBox.h}')
 print(f'leftBound={nameBox.left}, topBound={nameBox.top}, rightBound={nameBox.right}, bottomBound={nameBox.bottom}')
 print(f'centerLocation={nameBox.center}')"""
